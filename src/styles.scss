@@ -1,0 +1,157 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif !important;
+    color: #fff !important;
+  }
+  
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .p-0 {
+    padding: 0px;
+  }
+  
+  // All transitions
+  div,ul,a,p,h1,h2,h3,h4,h5,h6,span {
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+  }
+
+  textarea {
+      resize: none;
+      height: 60px;
+      width: 100%;
+  }
+  
+  a {
+    text-decoration: none !important;
+
+  }
+
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  div,p,h1,h2,h3,h4,h5,h6 {
+    margin: 0 0;
+  }
+  
+  h1 {
+    font-size: 65px !important;
+    font-weight: 700 !important;
+  }
+
+  .grey{
+      color: #7d848b;
+  }
+
+  .ptb20{
+      padding: 6px 0;
+  }
+
+  h2 {
+    font-size: 40px !important;
+    // margin-bottom: 20px !important;
+    // font-weight: 700 !important;
+  }
+
+  .img-responsive {
+      display: inline-block;
+    //   width: 100%;
+
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+ .btn-common {
+     background-color: transparent;
+     color: #fff;
+     background-color: #19bc9c;
+     padding: 8px 10px;
+     border-radius: 22px;
+     text-decoration: none;
+     margin-right: 10px;
+     font-size: 16px;
+     width: 100%;
+     border: 1px solid #19bc9c;
+     border: none;
+     cursor: pointer !important;
+     img {
+         width: 28px;
+         margin-left: 10px;
+     }
+     
+     &:hover {
+      // border: 1px solid #19bc9c;
+      color: #fff;
+      box-shadow: 0px 0px 10px 2px #ccc;
+    //   background-color: transparent;
+    }
+    &:active {
+      color: #fff;
+      background-color: #19bc9c;
+      box-shadow: 0px 0px 10px 2px #888;
+    }
+    &:focus {
+      outline: none;
+    }
+ }
+
+
+ .ptb {
+    padding: 60px 0;
+}
+
+.border1 {
+  height: 8px;
+  width: 100px;
+  background-color: #19bc9c;
+  display: inline-block;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+
+.clr {
+  color: #19bc9c;
+}
+
+.navbar-toggle {
+  background-color: #333;
+
+  .icon-bar {
+    background-color: #eee;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .nav-brand {
+    margin-left: 15px;
+  }
+ 
+  h1 {
+    font-size: 3.5rem !important;
+  }
+
+  h2 {
+    font-size: 2.5rem !important;
+    font-weight: bold;
+  }
+
+  .ptb {
+    padding: 20px 0;
+}
+}
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

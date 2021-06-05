@@ -1,0 +1,836 @@
+.main {
+    margin-top: 10px;
+
+    .dropdown-menu {
+        background-color: #000000;
+        border: 1px solid #373535;
+        padding: 0;
+        .dropdown-item {
+            color: #f7f7f7;
+            padding: 3px 15px;
+            &:hover {
+                color: #e65e1f;
+                background-color: transparent;
+            }
+        }
+    }
+
+ 
+    .navbar {
+        // .navbar-brand {
+        //     width: 150px;
+        // }
+        padding: 5px 0px;
+  
+        .navbar-nav {
+            margin: 0px 0 0 320px;
+          .nav-item {
+              padding: 5px 15px;
+              .nav-link{
+                //   color: #888;
+                  font-weight: 600;
+                //   padding: 10px;
+                margin: 0;
+                padding: 0px;
+                display: initial;
+  
+                  &:hover {
+                        color: #00c2bb;
+                        // text-decoration: none;
+                        border-bottom: 2px solid;
+                        margin: 0px;
+                  }
+              }
+          }
+        }
+    }
+  }
+
+
+  .common-g {
+    // text-transform: lowercase;
+    background: linear-gradient(to right, #F2C5BD 0%, #72e6ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+p {
+    color: #6c737d;
+}
+
+  .features {
+      
+    //  background-image: url(../../assets/sweetswap-presale-assets/features-background.png);
+     background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      color: #fff;
+    background: #0b0b16;
+    p {
+        color:#f8f9fa;
+        font-size: 15px;
+    }
+ 
+      .inner-side {
+        padding: 25px 10px;
+    border-radius: 30px;
+    background-color: #0e0e1c;
+    text-align: center;
+    margin-bottom: 10px;
+
+        &:hover {
+            padding: 25px 10px;
+            box-shadow: 0px 0px 9px 1px #000;
+            border-radius: 30px;
+            background-color: #14a084;
+        }
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+        }
+        img {
+            width: 130px;
+            margin-bottom: 15px;
+        }
+      }
+  }
+
+  .token {
+    // background-image: url(../../assets/sweetswap-presale-assets/token-distribution-background.png);
+    background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+      .inner-tile {
+          background-color: #202833;
+          padding: 15px 20px;
+          border-radius: 15px;
+          color: grey;
+          font-weight: 400;
+
+          .inner-style {
+              padding: 10px 0;
+
+             
+          }
+      }
+  }
+  
+
+  .steps {
+   background-color: #0b0b16;
+
+    .inner-box {
+        #main {
+            margin: 50px 0;
+          }
+          
+          #main #faq .card {
+            margin-bottom: 30px;
+            border: 0;
+          }
+          
+          #main #faq .card .card-header {
+            border: 0;
+            -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+                    box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+            border-radius: 2px;
+            padding: 0;
+          }
+          
+          #main #faq .card .card-header .btn-header-link {
+            color: #fff;
+            display: block;
+            text-align: left;
+            background: #FFE472;
+            color: #222;
+            padding: 20px;
+          }
+          
+          #main #faq .card .card-header .btn-header-link:after {
+            content: "\f107";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            float: right;
+          }
+          
+          #main #faq .card .card-header .btn-header-link.collapsed {
+            background: #A541BB;
+            color: #fff;
+          }
+          
+          #main #faq .card .card-header .btn-header-link.collapsed:after {
+            content: "\f106";
+          }
+          
+          #main #faq .card .collapsing {
+            background: #FFE472;
+            line-height: 30px;
+          }
+          
+          #main #faq .card .collapse {
+            border: 0;
+          }
+          
+          #main #faq .card .collapse.show {
+            background: #FFE472;
+            line-height: 30px;
+            color: #222;
+          }
+
+          
+          
+        }
+        .btn {
+          display: inline-block;
+          font-weight: 400;
+          color: #fff;
+          text-align: left;
+          vertical-align: middle;
+          -webkit-user-select: none;
+          user-select: none;
+          background-color: transparent;
+          border: 1px solid transparent;
+          padding: .375rem .75rem;
+          font-size: 1rem;
+          width: 100%;
+          line-height: 1.5;
+          border-radius: .25rem;
+          transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      }
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        color: #fff;
+        background-color: #0e0e1c !important;
+        background-clip: border-box;
+        border-bottom: 1px solid rgba(25, 188, 156, .5);
+        border-radius: 0.25rem;
+        padding: 10px 0px; 
+
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
+
+    p {
+        margin-top: 40px;
+    }
+
+     h2 {
+         margin: 20px 0 10px;
+     }
+  }
+
+.main-banner {
+    background-image: url("../../assets/fp3d-assets/header-background.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1,p {
+        margin-bottom: 30px;
+    }
+
+    .navbar-expand-lg {
+        padding: 10px 0;
+    }
+
+    // .active {
+    //     border-bottom: 1px solid #1abc9c;
+    //     color: #fff;
+    // }
+
+    .navbar-nav {
+        margin-left: 50px;
+        li {
+            padding: 0 15px;
+            a {
+                color: #6b6b72;
+                &:hover {
+                    border-bottom: 1px solid #1abc9c;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .for-new {
+        display: block;
+        width: 100%;
+        height: calc(1.5em + .75rem + 2px);
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #fff;
+        background-color: #292b27;
+        background-clip: padding-box;
+        border: 1px solid #292b27;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    
+
+    .inner-counter {
+        padding: 0 50px 0 0;
+        span {
+            font-size: 10px;
+    font-weight: 400;
+        }
+
+        h4 {
+            font-weight: 700;
+        }
+    }
+}
+
+.roadmap {
+    // background-image: url(../../assets/sweetswap-presale-assets/presale-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-color: #0e0e1d;
+    color: #fff;
+    // padding: 130px 0;
+    // margin: 50px 0;
+    // display: inline-block;
+
+    img {
+        margin: 50px 0;
+        display: inline-block;
+    }
+
+    .timeline:before {
+        content: '';
+        position:absolute;
+        height:100%;
+        left:50%;
+        width:2px;
+        top:-20px;
+        background:#19bc9c;
+        z-index:1;
+      }
+      .timeline{
+        position:relative;
+        margin: 50px auto;
+        width:1000px;
+        padding:50px 0;
+      }
+      
+      
+      .timeline ul{
+        margin:0;
+        padding:0 ;
+      }
+      
+      .timeline ul li{
+        list-style:none;
+        box-sizing:border-box; 
+        line-height:normal;
+        position:relative;
+        width:50%;
+        padding: 40px 70px;
+      }
+      
+      .timeline ul li .right_content h2{
+        color:#19bc9c;
+        padding:0px 2px 18px 0px;
+      }
+      .timeline ul li:nth-child(odd){
+        float:left;
+        text-align:right;
+        clear:both;
+      }
+      
+      .timeline ul li:nth-child(even){
+        float:right;
+        text-align:left;
+        clear:both;
+      }
+      
+      .left_content{
+        padding-bottom:20px;
+      }
+      
+      .timeline ul li:nth-child(odd):before{
+        content: '';
+        position:absolute;
+        width:10px;
+        height:10px;
+        background:#19bc9c;
+        border-radius:50%;
+        box-shadow:0 0 0 3px rgba(25, 188, 156, 0.3);
+        right:-6px;
+        top:24px;
+        z-index:1;
+      }
+      
+      .timeline ul li:nth-child(even):before{
+        content: '';
+        position:absolute;
+        width:10px;
+        height:10px;
+       background:#19bc9c;
+        border-radius:50%;
+        box-shadow:0 0 0 3px rgba(25, 188, 156, 0.3);
+      
+        left: -5px;
+    top: 24px;
+    z-index: 9999;
+      }
+      
+      .timeline ul li:nth-child(odd) .left_content{
+        position:absolute;
+        top:12px;
+        right:-165px;
+        margin:0;
+        padding:8px 16px;
+      
+        color:#fff;
+        box-shadow:0 0 0 3px rgba(25, 188, 156, 0.3);
+        border-radius:18px;
+        
+      }
+      
+      .timeline ul li:nth-child(even) .left_content{
+        position:absolute;
+        top:12px;
+        left:-165px;
+        margin:0;
+        padding:8px 16px;
+        
+        color:#fff;
+        box-shadow:0 0 0 3px rgba(25, 188, 156, 0.3);
+        border-radius:18px;
+        
+      }
+      
+      
+      @media (max-width: 1000px){
+        
+        .timeline{
+          width:100%;
+        }
+      }
+      
+      @media (max-width: 767px){
+        .timeline{
+          width:100%;
+        }
+        .timeline:before{
+          left:20px;
+        }
+        .timeline ul li:nth-child(odd),
+        .timeline ul li:nth-child(even){
+          width:100%;
+          text-align:left;
+         padding-left:50px; 
+        }
+        
+        .timeline ul li:nth-child(odd):before
+          {
+          top:-18px;
+          left:16px;
+        
+        }
+        .timeline ul li:nth-child(even):before
+        { 
+          top:-18px;
+          left:16px;
+        }
+        
+          .timeline ul li:nth-child(odd) .left_content,
+        .timeline ul li:nth-child(even) .left_content
+        {
+          top:-30px;
+          left:50px;
+          right:inherit;
+        }
+    }
+}
+
+
+.main-banner {
+
+    .inner-box {
+        margin-top: 80px;
+    }
+
+    .inner-boxy {
+        // background: #202833;
+        // padding: 0px 15px 20px;
+        border-radius: 10px;
+      
+        .inner-style {
+            padding: 10px;
+            li.list-inline-item {
+                margin-right: 20px;
+            }
+
+            .input-group {
+                background: rgba(252, 71, 140, .4);
+                border: none;
+                padding: 3px;
+                border-radius: 10px;
+            }
+        }
+
+        .list-inline {
+            li.list-inline-item {
+                h2 {
+                    font-size: 56px !important;
+                }
+            }
+        }
+
+        .inner-btn {
+            .btn-common{
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+                margin-top: 20px;
+
+            }
+        }
+    }
+}
+
+.round {
+    // background-image: url(../../assets/sweetswap-presale-assets/presale-background.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+background-color: #0b0b16;
+    .main-round {
+        background-color: rgba(0, 0, 0, .3);
+        color: #fff;
+        border-radius: 10px;
+        padding: 0px 0px 40px;
+
+        .inner-centent {
+            // background-color: #fc478c;
+    padding: 10px;
+        }
+
+        span {
+            font-size: 16px;
+        }
+        .inner-text {
+            h2 {
+                margin: 20px;
+            }
+        }
+    }
+    .address {
+        padding-bottom: 40px;
+    
+        .inner-step {
+            h4 {
+                margin: 20px 0;
+            }
+        }
+    
+        .main-round{
+            background-color: rgba(0, 0, 0, .3);
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+    
+            .inner-text {
+                padding: 10px;
+                h5 {
+                    margin: 0px;
+                }
+            }
+    
+            .inner-text1 {
+                margin: 0;
+    
+                input {
+                    background-color: rgba(0, 0, 0, .5);
+                    border: none;
+                    color: #fc478c;
+    
+                }
+            }
+    
+            .inner-text2 {
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+.round2 {
+    // background-image: url(../../assets/sweetswap-presale-assets/presale-background.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+
+background-color: #0b0b16;
+
+    .main-round {
+        background-color: rgba(0, 0, 0, .3);
+        color: #fff;
+        border-radius: 10px;
+        padding: 0px 0px 40px;
+
+        .inner-centent {
+            // background-color: #fc478c;
+    padding: 10px;
+        }
+
+        span {
+            font-size: 16px;
+        }
+        .inner-text {
+            h2 {
+                margin: 20px;
+            }
+        }
+    }
+    .address {
+        padding-bottom: 40px;
+    
+        .inner-step {
+            h4 {
+                margin: 20px 0;
+            }
+        }
+    
+        .main-round{
+            background-color: rgba(0, 0, 0, .3);
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+    
+            .inner-text {
+                padding: 10px;
+                h5 {
+                    margin: 0px;
+                }
+            }
+    
+            .inner-text1 {
+                margin: 0;
+    
+                input {
+                    background-color: rgba(0, 0, 0, .5);
+                    border: none;
+                    color: #fc478c;
+    
+                }
+            }
+    
+            .inner-text2 {
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: #0f0f1d;
+    padding-top: 20px;
+    .inner-logo {
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .inner-nav {
+        margin-top: 40px;
+
+        a {
+            color: #6c737d;
+            margin-bottom: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+      
+    }
+
+    .inner-form {
+        position: relative;
+        h6 {
+            margin-top: 40px;
+        }
+
+        input {
+            background: #181830;
+            height: 56px;
+            border-radius: 28px;
+            margin-top: 20px;
+            border: none;
+        }
+        img {
+            position: absolute;
+            right: 2px;
+            width: 90px;
+            top: 23px;
+            z-index: 99999;
+        }
+
+
+    }
+
+    .inner-copy {
+        img {
+            width: 35px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main-banner {
+        .navbar-nav {
+            margin-left: 0px;
+            li {
+                padding: 0px;
+                a {
+                    color: #2e3746;
+                    &:hover {
+                        border-bottom: 1px solid #1abc9c;
+                    }
+                }
+            }
+        }
+
+        .inner-box {
+            margin-top: 0px;
+        }
+
+
+
+    .navbar-toggler {
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        // background-color: #19bc9c;
+        border: 1px solid #fff;
+        border-radius: .25rem;
+    }
+        h1,p {
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 44px !important;
+        }
+    }
+
+    .popular {
+        .fa {
+            color: yellow;
+        }
+        h4 {
+            font-weight: normal !important;
+        }
+        .inner-tile {
+            // background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            // box-shadow: 0px 2px 13px 3px #eee;
+            height: 390px;
+            margin-bottom: 10px;
+    
+            img {
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 15px;
+            }
+    
+        }
+    
+        .inner-tile2 {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 13px 3px #eee;
+            height: 200px;
+            margin-bottom: 10px;
+    
+            img {
+                // margin: 20px 0;
+            }
+    
+            h3 {
+                
+        margin: 10px 0 20px;
+        font-size: 24px;
+            }
+    
+            .btn-common {
+                font-size: 12px;
+            }
+        }
+    
+    
+    }
+
+    .main {
+        .navbar {
+            .navbar-toggler {
+                padding: .25rem .75rem;
+                font-size: 1.25rem;
+                line-height: 1;
+                background-color: #1aa5ba;
+                border: 1px solid transparent;
+                border-radius: .25rem;
+                // border: 1px solid red;
+                opacity: .8;
+            }
+           
+      
+            .navbar-nav {
+                margin: 0px;
+              .nav-item {
+                  padding: 0;
+                  .nav-link{
+                      color: #888;
+                      font-weight: 600;
+      
+                      &:hover {
+                          color: #00c2bb;
+                          text-decoration: none;
+                      }
+                  }
+              }
+            }
+      
+            .form-inline {
+                a {
+                  color: #888;
+                  font-weight: 600;
+      
+                  &:hover {
+                      color: red;
+                      text-decoration: none;
+                  }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+// for ipad 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+
+}
+
+
+// for phones {
+    @media (min-device-width:320px) and (max-device-width:768px) {
+      
+    }
+
+    
