@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'fp3d-landing-repo';
+  title = 'fp3d-nft-landing-pages';
 }
