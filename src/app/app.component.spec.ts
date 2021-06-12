@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'fp3d-landing-repo'`, () => {
+  it(`should have as title 'fp3d-nft-landing-pages'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('fp3d-landing-repo');
+    expect(app.title).toEqual('fp3d-nft-landing-pages');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('fp3d-landing-repo app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('fp3d-nft-landing-pages app is running!');
   });
 });
