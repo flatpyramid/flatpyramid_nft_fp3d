@@ -313,7 +313,8 @@ export class AppSettings {
 			"name": "OwnershipTransferred",
 			"type": "event"
 		}
-	]
+	];
+
 
 	
 
