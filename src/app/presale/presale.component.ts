@@ -13,9 +13,15 @@ export class PresaleComponent implements OnInit {
   setnetwork: any;
   connected: boolean;
   model: any = {};
+  showcopy: boolean;
+	showcopy1: boolean;
   constructor(private zone: NgZone, @Inject(WEB3) private web3: any, private Web3: Web3) { }
 
   ngOnInit(): void {
+    this.model.address = '0x61Ab76EDF48F7e7dB6C3FE0a1F0A779De232236B';
+		this.model.addressContract = '0x3DAeCAE376Ad4FB15eAd85Fb69827C26EA01Bd0B';
+    this.model.addressBNB ='0x6B337A97ad102Cf79F24A5419ac8B2117270E9d5';
+    this.model.addressContractBNB ='0xd1a9b078D80dd215Da4E780cAB0fb2F29667B06d';
   }
 
   ngAfterViewInit() {
@@ -29,7 +35,78 @@ export class PresaleComponent implements OnInit {
     this.setnetwork = val;
 
   }
+  copyMessageEth() {
+		const selBox = document.createElement('textarea');
+		selBox.style.position = 'fixed';
+		selBox.style.left = '0';
+		selBox.style.top = '0';
+		selBox.style.opacity = '0';
+		selBox.value = this.model.address;
+		document.body.appendChild(selBox);
+		selBox.focus();
+		selBox.select();
+		document.execCommand('copy');
+		document.body.removeChild(selBox);
 
+		this.showcopy = true;
+		setTimeout(() => {
+			this.showcopy = false;
+		}, 2000);
+	}
+	copyMessageContractAddressEth() {
+		const selBox = document.createElement('textarea');
+		selBox.style.position = 'fixed';
+		selBox.style.left = '0';
+		selBox.style.top = '0';
+		selBox.style.opacity = '0';
+		selBox.value = this.model.addressContract;
+		document.body.appendChild(selBox);
+		selBox.focus();
+		selBox.select();
+		document.execCommand('copy');
+		document.body.removeChild(selBox);
+
+		this.showcopy1 = true;
+		setTimeout(() => {
+			this.showcopy1 = false;
+		}, 2000);
+	}
+  copyMessageBnb() {
+		const selBox = document.createElement('textarea');
+		selBox.style.position = 'fixed';
+		selBox.style.left = '0';
+		selBox.style.top = '0';
+		selBox.style.opacity = '0';
+		selBox.value = this.model.addressBNB;
+		document.body.appendChild(selBox);
+		selBox.focus();
+		selBox.select();
+		document.execCommand('copy');
+		document.body.removeChild(selBox);
+
+		this.showcopy = true;
+		setTimeout(() => {
+			this.showcopy = false;
+		}, 2000);
+	}
+  copyMessageContractAddressBnb() {
+		const selBox = document.createElement('textarea');
+		selBox.style.position = 'fixed';
+		selBox.style.left = '0';
+		selBox.style.top = '0';
+		selBox.style.opacity = '0';
+		selBox.value = this.model.addressContractBNB;
+		document.body.appendChild(selBox);
+		selBox.focus();
+		selBox.select();
+		document.execCommand('copy');
+		document.body.removeChild(selBox);
+
+		this.showcopy1 = true;
+		setTimeout(() => {
+			this.showcopy1 = false;
+		}, 2000);
+	}
   async enableMetamask() {
     try {
       const provider = new MetamaskProvider();
@@ -102,7 +179,7 @@ export class PresaleComponent implements OnInit {
           console.log(res);
   
           if (res) {
-            var tokenInst = await new w3js.eth.Contract(AppSettings.presale_Abi, AppSettings.ethtoken);
+            var tokenInst = await new w3js.eth.Contract(AppSettings.presale_Abi, AppSettings.ethpresale);
             await tokenInst.methods.buyTokens(res[0]).send({ from: res[0], gas: '210000', gasPrice: w3js.utils.toWei('55', 'gwei'), value: w3js.utils.toWei(JSON.stringify((amount / 10000)), 'ether') });
   
           } else {
@@ -132,7 +209,7 @@ export class PresaleComponent implements OnInit {
           console.log(res);
   
           if (res) {
-            var tokenInst = await new w3js.eth.Contract(AppSettings.presale_Abi, AppSettings.bnbtoken);
+            var tokenInst = await new w3js.eth.Contract(AppSettings.presale_Abi, AppSettings.bnbpresale);
             await tokenInst.methods.buyTokens(res[0]).send({ from: res[0], gas: '210000', gasPrice: w3js.utils.toWei('55', 'gwei'), value: w3js.utils.toWei(JSON.stringify((amount / 10000)), 'ether') });
   
           } else {

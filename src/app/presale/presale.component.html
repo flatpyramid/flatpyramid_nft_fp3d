@@ -328,37 +328,88 @@
                     <!-- <button class="btn-common" style="margin: 20px 0;">Buy Now</button> -->
                 </div>
 
-                <div class="inner-box">
-                    <h3>Presale Address:</h3>
-                    <ul class="list-inline" style="margin: 20px 0 0px;">
-                        <li class="list-inline-item">
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" readonly> 
-                            </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <div class="inner-btn">
-                                <button class="btn-common">Copy</button>
-                            </div>
-                        </li>
-                    </ul>
+                <div *ngIf="setnetwork=='eth'">
+                    <div class="inner-box">
+                        <h3>Presale Address :</h3>
+                        <ul class="list-inline" style="margin: 20px 0 0px;">
+                            <li class="list-inline-item">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" [(ngModel)]="model.address" #address="ngModel" value="" readonly> 
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="inner-btn">
+                                    <ul class="list-inline">
+                                        <li><button class="btn-common" *ngIf="!showcopy" (click)="copyMessageEth()">Copy</button></li>
+                                        <li class="pt-3"><button *ngIf="showcopy" class="btn-common">Copied</button></li>
+                                    </ul>
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="inner-box">
+                        <h3>Contract Address:</h3>
+                        <ul class="list-inline" style="margin: 20px 0 0px;">
+                            <li class="list-inline-item">
+                                <div class="form-group">
+                                    <input type="email" class="form-control"  [(ngModel)]="model.addressContract" value="" readonly>
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="inner-btn">
+                                    <ul class="list-inline">
+                                        <li><button class="btn-common" *ngIf="!showcopy1" (click)="copyMessageContractAddressEth()">Copy</button></li>
+                                        <li class="pt-3"><button *ngIf="showcopy1" class="btn-common">Copied</button></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="inner-box">
-                    <h3>Contract Address:</h3>
-                    <ul class="list-inline" style="margin: 20px 0 0px;">
-                        <li class="list-inline-item">
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" readonly>
-                            </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <div class="inner-btn">
-                                <button class="btn-common">Copy</button>
-                            </div>
-                        </li>
-                    </ul>
+                <div *ngIf="setnetwork=='bnb'">
+                    <div class="inner-box">
+                        <h3>Presale Address :</h3>
+                        <ul class="list-inline" style="margin: 20px 0 0px;">
+                            <li class="list-inline-item">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" [(ngModel)]="model.addressBNB" #address="ngModel" value="" readonly> 
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="inner-btn">
+                                    <ul class="list-inline">
+                                        <li><button class="btn-common" *ngIf="!showcopy" (click)=" copyMessageBnb()">Copy</button></li>
+                                        <li class="pt-3"><button *ngIf="showcopy" class="btn-common">Copied</button></li>
+                                    </ul>
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="inner-box ">
+                        <h3>Contract Address:</h3>
+                        <ul class="list-inline" style="margin: 20px 0 0px;">
+                            <li class="list-inline-item">
+                                <div class="form-group">
+                                    <input type="email" class="form-control"  [(ngModel)]="model.addressContractBNB" value="" readonly>
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="inner-btn">
+                                    <ul class="list-inline">
+                                        <li><button class="btn-common" *ngIf="!showcopy1" (click)="copyMessageContractAddressBnb()">Copy</button></li>
+                                        <li class="pt-3"><button *ngIf="showcopy1" class="btn-common">Copied</button></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                
            </div>
            <div class="col-sm-6">
             <div class="">
