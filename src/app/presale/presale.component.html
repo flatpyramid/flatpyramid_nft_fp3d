@@ -4,263 +4,303 @@
             <a class="navbar-brand" href="#">
                 <img src="../../assets/fp3d-assets/logo.png" alt="" class="img-fluid">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-          
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <!-- <li class="nav-item active">
-                  <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"></a>htr
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link btn-common" href="#">CONNECT WALLET</a>
-                </li> -->
-              </ul>
-              <div class="form-inline my-2 my-lg-0">
-                  <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <button class="btn-common my-2 my-sm-0" (click)="enableMetamask()">Connect Wallet</button>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" (click)="scroll(target)">Welcome <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="list-inline-item">
-                        <section class="popup">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <!-- Button trigger modal [hidden]="true"-->
-                            <button type="button" class="btn-common" data-toggle="modal" data-target="#exampleModal"   d="openModal" #openModal  >
-                                Choose Network
-                              </button>
-                              
-                              <!-- Modal -->
-                              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="">
-                                        <div class="row ptb">
-                                            <div class="col-sm-12 text-center">
-                                                <h3>CHOOSE NETWORK</h3>
-                                                <span class="border1"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-body">
-                                      <div class="row">
-                                          <div class="col-sm-6">
-                                              <div class="inner-content">
-                                                  <div class="inner-img">
-                                                      <img src="../../assets/fp3d-presale-assets/ethereum-logo.png" alt="" class="img-fluid">
-                                                  </div>
-                                                  <div class="p20">
-                                                      <ul class="list-inline">
-                                                          <li class="list-inline-item">
-                                                              <div class="inner-icon">
-                                                                  <span><i class="fa fa-check"></i></span>
-                                                                  <img src="../../assets/fp3d-presale-assets/tick.png" alt="" class="img-fluid">
-                                                              </div>
-                                                          </li>
-                                                          <li class="list-inline-item">
-                                                            <div class="inner-icon">
-                                                                <h6>High security & Authenticity</h6>
-                                                            </div>
-                                                        </li>
-                                                      </ul>
-                                                      <ul class="list-inline">
-                                                        <li class="list-inline-item">
-                                                            <div class="inner-icon">
-                                                                <span><i class="fa fa-check"></i></span>
-                                                                <img src="../../assets/fp3d-presale-assets/tick.png" alt="" class="img-fluid">
-                                                            </div>
-                                                        </li>
-                                                        <li class="list-inline-item">
-                                                          <div class="inner-icon">
-                                                              <h6>Proven Reliability</h6>
-                                                          </div>
-                                                      </li>
-                                                    </ul>
-                                                    <ul class="list-inline">
-                                                        <li class="list-inline-item">
-                                                            <div class="inner-icon">
-                                                                <span><i class="fa fa-times"></i></span>
-                                                                <img src="../../assets/fp3d-presale-assets/cross.png" alt="" class="img-fluid">
-                                                            </div>
-                                                        </li>
-                                                        <li class="list-inline-item">
-                                                          <div class="inner-icon">
-                                                              <h6>High Network Fees</h6>
-                                                          </div>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <div class="inner-icon">
-                                                            <button class="btn-common" data-dismiss="modal" (click)="chooseNetwork('eth')">Select Ethereum</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                              </div>
-                                          </div>
-                                          <div class="col-sm-6">
-                                            <div class="inner-content">
-                                                <div class="inner-img">
-                                                    <img src="../../assets/fp3d-presale-assets/binance-logo.png" alt="" class="img-fluid">
-                                                </div>
-                                                <div class="p20">
-                                                    <ul class="list-inline">
-                                                        <li class="list-inline-item">
-                                                            <div class="inner-icon">
-                                                                <span><i class="fa fa-check"></i></span>
-                                                                <img src="../../assets/fp3d-presale-assets/tick.png" alt="" class="img-fluid">
-                                                            </div>
-                                                        </li>
-                                                        <li class="list-inline-item">
-                                                          <div class="inner-icon">
-                                                              <h6>low Network Fees</h6>
-                                                          </div>
-                                                      </li>
-                                                    </ul>
-                                                    <ul class="list-inline">
-                                                      <li class="list-inline-item">
-                                                          <div class="inner-icon">
-                                                              <span><i class="fa fa-check"></i></span>
-                                                              <img src="../../assets/fp3d-presale-assets/tick.png" alt="" class="img-fluid">
-                                                          </div>
-                                                      </li>
-                                                      <li class="list-inline-item">
-                                                        <div class="inner-icon">
-                                                            <h6>Fast Adoption Rates</h6>
-                                                        </div>
-                                                    </li>
-                                                  </ul>
-                                                  <ul class="list-inline">
-                                                      <li class="list-inline-item">
-                                                          <div class="inner-icon">
-                                                              <span><i class="fa fa-times"></i></span>
-                                                              <img src="../../assets/fp3d-presale-assets/cross.png" alt="" class="img-fluid">
-                                                          </div>
-                                                      </li>
-                                                      <li class="list-inline-item">
-                                                        <div class="inner-icon">
-                                                            <h6>Low Degree of Decentralization</h6>
-                                                        </div>
-                                                    </li>
-                                                  </ul>
-                                                </div>
-                                              <div class="row">
-                                                  <div class="col-sm-12">
-                                                      <div class="inner-icon">
-                                                          <button class="btn-common" data-dismiss="modal" (click)="chooseNetwork('bnb')">Select Binance</button>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                            </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </section>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="scroll(features)">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../assets/FlatPyramidWhitePaper.pdf" target="_blank">White
+                            Paper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#roadmap">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#faq">FAQ</a>
                     </li>
                 </ul>
-                
             </div>
-            </div>
-          </nav>
+        </nav>
         <div class="row ptb">
-            <div class="col-sm-7 animate__animated animate__backInLeft">
+            <div class="col-sm-12 animate__animated animate__backInLeft">
                 <div class="inner-box" #buy>
-                    <h2 class="main-color">Bringing NFT technology
-                        <br> <span class="common-g"> into a 3d models marketplace </span> </h2>
-                    <p>FlatPyramid is a crowdsourced marketplace for 3d model files, bought and sold as NFTs.                    </p>
+                    <h2>Featuring 3D Models as <span class="common-g"> Non Fungible Tokens (NFTs)</span> </h2>
+                    <p>FlatPyramid is an NFT marketplace for 3d models for Gaming, the Metaverse, Augmented Reality, Virtual Reality and Interactive Media.</p>
                     <ul class="list-inline">
-                        <li class="list-inline-item" >
-                          <a href="../../assets/FlatPyramidWhitePaper.pdf"  class="btn-common" target="_blank">White Paper</a>
+                        <li class="list-inline-item">
+                            <a href="../../assets/FlatPyramidWhitePaper.pdf" class="btn-common" target="_blank">White
+                                Paper</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="col-sm-5 animate__animated animate__backInRight">
+            <div class="col-sm-12 animate__animated animate__backInRight">
                 <div class="inner-boxy">
-                    <h3 class="clr text-center">Presale Ends On:</h3>
-                    <h6 class="text-center">4th June 2021, 12AM</h6>
+                    <h3 class="clr text-center">Sample NFT 3D Model Marketplace</h3>
+                    <h6 class="text-center">Available at Launch</h6>
                     <div class="inner-style">
-                        <div class="row">
+
+                        <div id="carouselDemoCaptions" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselDemoCaptions" data-slide-to="0" class="active">
+                                </li>
+                                <li data-target="#carouselDemoCaptions" data-slide-to="1"></li>
+                                <li data-target="#carouselDemoCaptions" data-slide-to="2"></li>
+                                <li data-target="#carouselDemoCaptions" data-slide-to="3"></li>
+                                <li data-target="#carouselDemoCaptions" data-slide-to="4"></li>
+                                <li data-target="#carouselDemoCaptions" data-slide-to="5"></li>
+                                <li data-target="#carouselDemoCaptions" data-slide-to="6"></li>
+                                <li data-target="#carouselDemoCaptions" data-slide-to="7"></li>
+                            </ol>
+                            <div class="carousel-inner pl-5 pr-5">
+                                <div class="carousel-item active">
+                                    <img src="../../assets/fp3d-assets/1-product-page.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="clr">Buy NFT of 3D Model</h5>
+                                        <p class="font-0_75">Go to <a href="https://www.flatpyramid.com/3d-models" target="_blank">(www.flatpyramid.com)</a> and select "Buy NFT of 3D Model" to add the NFT of the 3D model to your cart.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/fp3d-assets/2-collect-NFT-w-fillers.jpg" class="d-block w-100 mh-520" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="clr">Collect the NFT</h5>
+                                        <p class="font-0_75">Then, click on "Collect" to buy the NFT of the 3D Model</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/fp3d-assets/3-choose-network-eth-or-bsc.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="clr">Choose Blockchain Network</h5>
+                                        <p class="font-0_75">Select your blockchain network (Ethereum or Binance Smart
+                                            Chain).</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/fp3d-assets/4-choose-wallet-metamask-or-truswallet.jpg"
+                                        class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="clr">Connect/Select Wallet</h5>
+                                        <p class="font-0_75">Then, proceed to select and connect your MetaMask wallet (for Ethereum) or TrustWallet
+                                            (Binance Smart Chain).</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/fp3d-assets/5-approve-with-usdc-or-fp3d.jpg" class="d-block w-100"
+                                        alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="clr">Select Cryptocurrency</h5>
+                                        <p class="font-0_75">Select the cryptocurrency you want to pay with (USDC or FP3D), then click on "Approve" to
+                                            send transaction to your wallet.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/fp3d-assets/6-confirm-transaction-on-wallet.jpg" class="d-block w-100"
+                                        alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="clr">Confirm on Wallet</h5>
+                                        <p class="font-0_75">Confirm your transaction on your wallet interface</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/fp3d-assets/5-pay-with-usdc-or-fp3d.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="clr">Pay for NFT</h5>
+                                        <p class="font-0_75">Once approved, click on "Pay" and your purchase transaction will be submitted.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/fp3d-assets/7-view-in-wallet-collectibles.jpg" class="d-block w-100"
+                                        alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5 class="clr">View your NFT</h5>
+                                        <p class="font-0_75">After your transaction is complete, your NFT will appear under your collectibles.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-target="#carouselDemoCaptions"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-target="#carouselDemoCaptions"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </button>
+                        </div>
+                        <!--- <div class="row">
                             <div class="col-sm-12">
-                                <ul  id="timer" class="list-inline text-center">
+                                <ul id="timer" class="list-inline text-center">
                                     <li class="list-inline-item">
-                                        <h2  id="days" class="clr">03</h2>
+                                        <h2 id="days" class="clr">03</h2>
                                         <h6><strong>DAYS</strong></h6>
                                     </li>
                                     <li class="list-inline-item">
-                                        <h2  id="hours" class="clr">05</h2>
+                                        <h2 id="hours" class="clr">05</h2>
                                         <h6><strong>HRS</strong></h6>
                                     </li>
                                     <li class="list-inline-item">
-                                        <h2  id="minutes" class="clr">15</h2>
+                                        <h2 id="minutes" class="clr">15</h2>
                                         <h6><strong>MIN</strong></h6>
                                     </li>
                                     <li class="list-inline-item">
-                                        <h2  id="seconds" class="clr">30</h2>
+                                        <h2 id="seconds" class="clr">30</h2>
                                         <h6><strong>SEC</strong></h6>
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                  
-                        <!-- <div class="row">
-                            <div class="col-sm-12">
-                                <div class="for-inner">
-                                    <p>Token Name: <span class="common-g">FP3D</span></p>
-                                    <p>Presale Supply: <span class="common-g">100,000,000</span></p>
-                                    <p>Presale Price: <span class="common-g">1 BNB = 5,000</span></p>
-                                </div>
-                            </div>
                         </div> -->
-                        <div class="row">
+                        <!-- <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="for-inner">
+                                            <p>Token Name: <span class="common-g">FP3D</span></p>
+                                            <p>Presale Supply: <span class="common-g">100,000,000</span></p>
+                                            <p>Presale Price: <span class="common-g">1 BNB = 5,000</span></p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                        <!-- <div class="row">
                             <div class="col-sm-12">
 
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control for-input" placeholder="Enter Amount Of Token" name="getval" [(ngModel)]="model.getval" #getval="ngModel"  aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                  
+                                    <input type="text" class="form-control for-input"
+                                        placeholder="Enter Amount Of Token" name="getval" [(ngModel)]="model.getval"
+                                        #getval="ngModel" aria-label="Recipient's username"
+                                        aria-describedby="basic-addon2">
+
                                     <button class="btn-common" (click)="launchPresale()">Confirm</button>
-                                  </div>
+                                </div>
                             </div>
-                        </div>
+                        </div> 
+                    </div> -->
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </section>
+<!-- <section class="features ptb" #features>
+    <div class="container">
+        <div class="row">
+            <div id="carouselDemoCaptions" class="carousel slide col-md-12" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselDemoCaptions" data-slide-to="0" class="active">
+                    </li>
+                    <li data-target="#carouselDemoCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselDemoCaptions" data-slide-to="2"></li>
+                    <li data-target="#carouselDemoCaptions" data-slide-to="3"></li>
+                    <li data-target="#carouselDemoCaptions" data-slide-to="4"></li>
+                    <li data-target="#carouselDemoCaptions" data-slide-to="5"></li>
+                    <li data-target="#carouselDemoCaptions" data-slide-to="6"></li>
+                    <li data-target="#carouselDemoCaptions" data-slide-to="7"></li>
+                </ol>
+                <div class="carousel-inner pl-4 pr-4">
+                    <div class="carousel-item active">
+                        <img src="../../assets/fp3d-assets/1-product-page.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Buy NFT of 3D Model</h5>
+                            <p>Go to <a href="www.flatpyramid.com" target="_blank">(www.flatpyramid.com)</a> and browse
+                                for 3d models. Then, upon our NFT product launch, you will
+                                be able to select "Buy NFT of 3D Model" to add the NFT of the 3D model to your cart.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../assets/fp3d-assets/2-collect-NFT.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Collect the NFT</h5>
+                            <p>Then, click on "Collect" to buy the NFT of the 3D Model (you get both the NFT as well as
+                                the 3d model download).</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../assets/fp3d-assets/3-choose-network-eth-or-bsc.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Choose Blockchain Network</h5>
+                            <p>On the modal "Choose Network", select your blockchain network (Ethereum or Binance Smart
+                                Chain).</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../assets/fp3d-assets/4-choose-wallet-metamask-or-truswallet.jpg"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Connect/Select Wallet</h5>
+                            <p>Then, proceed to select and connect your MetaMask wallet (for Ethereum) or TrustWallet
+                                (Binance Smart Chain).</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../assets/fp3d-assets/5-approve-with-usdc-or-fp3d.jpg" class="d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Select Cryptocurrency</h5>
+                            <p>Select the cryptocurrency you want to pay with (USDC or FP3D), then click on "Approve" to
+                                send transaction to your wallet.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../assets/fp3d-assets/6-confirm-transaction-on-wallet.jpg" class="d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Confirm on Wallet</h5>
+                            <p>Confirm your transaction on your wallet interface</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../assets/fp3d-assets/5-pay-with-usdc-or-fp3d.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Pay for NFT</h5>
+                            <p>Once approved, click on "Pay" and your purchase transaction will be submitted.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../assets/fp3d-assets/7-view-in-wallet-collectibles.jpg" class="d-block w-100"
+                            alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>View your NFT</h5>
+                            <p>Once your transaction is complete, your NFT will appear under your collections.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselDemoCaptions"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselDemoCaptions"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section> -->
 <section class="features ptb" #features>
-   <div class="container">
-              
-       <div class="row">
-           <div class="col-sm-6">
-               <div class="inner-img">
-                   <img src="../../assets/fp3d-assets/key-features-image.png" alt="" class="img-fluid" style="margin-top: 80px;">
-               </div>
-           </div>
-           <div class="col-sm-6">
-               <div class="inner-text">
-                   <h2>Key 
-                    <span class="common-g">Features</span></h2>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="inner-img">
+                    <img src="../../assets/fp3d-assets/key-features-image.png" alt="" class="img-fluid"
+                        style="margin-top: 80px;">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="inner-text">
+                    <h2>Key
+                        <span class="common-g">Features</span>
+                    </h2>
                 </div>
                 <div class="inner-side">
                     <ul class="list-inline">
@@ -276,53 +316,54 @@
                 <div class="inner-side">
                     <ul class="list-inline">
                         <li class="list-inline-item">
-                            <img src="../../assets/fp3d-assets/buy-through-two-blockchain-icon.png" alt="" class="img-fluid">
-                         </li>
-                         <li class="list-inline-item">
-                            <h3  class="main-color">
-                             Buy through two blockchains
-                                </h3>
-                         </li>
+                            <img src="../../assets/fp3d-assets/buy-through-two-blockchain-icon.png" alt=""
+                                class="img-fluid">
+                        </li>
+                        <li class="list-inline-item">
+                            <h3 class="main-color">
+                                Buy through two blockchains
+                            </h3>
+                        </li>
                     </ul>
                     <p>Flat Pyramid allows transactions on both Ethereum Blockchain and the Binance Smart Chain</p>
                 </div>
                 <div class="inner-side">
-                 <ul class="list-inline">
-                     <li class="list-inline-item">
-                        <img src="../../assets/fp3d-assets/mint-nft-icon.png" alt="" class="img-fluid">
-                     </li>
-                     <li class="list-inline-item">
-                         <h3  class="main-color">
-                             Mint NFTs on every purchase 
-                             </h3>
-                      </li>
-                 </ul>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <img src="../../assets/fp3d-assets/mint-nft-icon.png" alt="" class="img-fluid">
+                        </li>
+                        <li class="list-inline-item">
+                            <h3 class="main-color">
+                                Mint NFTs on every purchase
+                            </h3>
+                        </li>
+                    </ul>
                     <p>Receive an image of the 3d model as an NFT to prove your ownership of each product</p>
                 </div>
             </div>
-       </div>
-   </div>
+        </div>
+    </div>
 </section>
 
 
 <section class="round">
-   <div class="container">
-       <div class="row">
-           <div class="col-sm-12">
-               <div class="inner-11 text-center">
-                   <h2>Presale Details</h2>
-                   <span class="border1"></span>
-               </div>
-           </div>
-       </div>
-       <div class="row ptb">
-           <div class="col-sm-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="inner-11 text-center">
+                    <h2>Presale Details</h2>
+                    <span class="border1"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row ptb">
+            <div class="col-sm-6">
                 <div class="inner-box">
                     <h3 class="text-center">Presale</h3>
                     <p class="text-center">A limited-time sale of FP3D at a discount for early investors</p>
 
                     <h3 class="clr text-center" *ngIf="setnetwork=='bnb'">1 BNB = 5500 (5.5K) FP3D</h3>
-                    
+
                     <h3 class="clr text-center" *ngIf="setnetwork=='eth'">1 ETH = 40,000 (40K) FP3D</h3>
 
                     <!-- <button class="btn-common" style="margin: 20px 0;">Buy Now</button> -->
@@ -334,34 +375,40 @@
                         <ul class="list-inline" style="margin: 20px 0 0px;">
                             <li class="list-inline-item">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" [(ngModel)]="model.address" #address="ngModel" value="" readonly> 
+                                    <input type="email" class="form-control" [(ngModel)]="model.address"
+                                        #address="ngModel" value="" readonly>
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="inner-btn">
                                     <ul class="list-inline">
-                                        <li><button class="btn-common" *ngIf="!showcopy" (click)="copyMessageEth()">Copy</button></li>
-                                        <li class="pt-3"><button *ngIf="showcopy" class="btn-common">Copied</button></li>
+                                        <li><button class="btn-common" *ngIf="!showcopy"
+                                                (click)="copyMessageEth()">Copy</button></li>
+                                        <li class="pt-3"><button *ngIf="showcopy" class="btn-common">Copied</button>
+                                        </li>
                                     </ul>
-                                    
+
                                 </div>
                             </li>
                         </ul>
                     </div>
-    
+
                     <div class="inner-box">
                         <h3>Contract Address:</h3>
                         <ul class="list-inline" style="margin: 20px 0 0px;">
                             <li class="list-inline-item">
                                 <div class="form-group">
-                                    <input type="email" class="form-control"  [(ngModel)]="model.addressContract" value="" readonly>
+                                    <input type="email" class="form-control" [(ngModel)]="model.addressContract"
+                                        value="" readonly>
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="inner-btn">
                                     <ul class="list-inline">
-                                        <li><button class="btn-common" *ngIf="!showcopy1" (click)="copyMessageContractAddressEth()">Copy</button></li>
-                                        <li class="pt-3"><button *ngIf="showcopy1" class="btn-common">Copied</button></li>
+                                        <li><button class="btn-common" *ngIf="!showcopy1"
+                                                (click)="copyMessageContractAddressEth()">Copy</button></li>
+                                        <li class="pt-3"><button *ngIf="showcopy1" class="btn-common">Copied</button>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -375,58 +422,71 @@
                         <ul class="list-inline" style="margin: 20px 0 0px;">
                             <li class="list-inline-item">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" [(ngModel)]="model.addressBNB" #address="ngModel" value="" readonly> 
+                                    <input type="email" class="form-control" [(ngModel)]="model.addressBNB"
+                                        #address="ngModel" value="" readonly>
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="inner-btn">
                                     <ul class="list-inline">
-                                        <li><button class="btn-common" *ngIf="!showcopy" (click)=" copyMessageBnb()">Copy</button></li>
-                                        <li class="pt-3"><button *ngIf="showcopy" class="btn-common">Copied</button></li>
+                                        <li><button class="btn-common" *ngIf="!showcopy"
+                                                (click)=" copyMessageBnb()">Copy</button></li>
+                                        <li class="pt-3"><button *ngIf="showcopy" class="btn-common">Copied</button>
+                                        </li>
                                     </ul>
-                                    
+
                                 </div>
                             </li>
                         </ul>
                     </div>
-    
+
                     <div class="inner-box ">
                         <h3>Contract Address:</h3>
                         <ul class="list-inline" style="margin: 20px 0 0px;">
                             <li class="list-inline-item">
                                 <div class="form-group">
-                                    <input type="email" class="form-control"  [(ngModel)]="model.addressContractBNB" value="" readonly>
+                                    <input type="email" class="form-control" [(ngModel)]="model.addressContractBNB"
+                                        value="" readonly>
                                 </div>
                             </li>
                             <li class="list-inline-item">
                                 <div class="inner-btn">
                                     <ul class="list-inline">
-                                        <li><button class="btn-common" *ngIf="!showcopy1" (click)="copyMessageContractAddressBnb()">Copy</button></li>
-                                        <li class="pt-3"><button *ngIf="showcopy1" class="btn-common">Copied</button></li>
+                                        <li><button class="btn-common" *ngIf="!showcopy1"
+                                                (click)="copyMessageContractAddressBnb()">Copy</button></li>
+                                        <li class="pt-3"><button *ngIf="showcopy1" class="btn-common">Copied</button>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
-           </div>
-           <div class="col-sm-6">
-            <div class="">
-                <h2>Presale<span class="clr"> Distribution</span></h2>
-                <!-- <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> -->
-                <p>Name: <span class="clr"><strong>FP3D</strong> </span></p>
-                <p>Starts: <span class="clr"><strong>31st May 2021</strong> </span></p>
-                <p>Ends: <span class="clr"><strong></strong>4th June 2021</span></p>
-                <p>Currencies Accepted: <span class="clr"><strong *ngIf="setnetwork=='eth'">ETH </strong> <strong *ngIf="setnetwork=='bnb'">BNB</strong> </span></p>
-                <p>Exchange Rate: <span class="clr"><strong *ngIf="setnetwork=='eth'">1 ETH = 40,000 (40K) FP3D </strong> <strong *ngIf="setnetwork=='bnb'"> 1 BNB = 5500 (5.5K) FP3D </strong> </span></p>
-                <p>Hard Cap: <span class="clr"><strong *ngIf="setnetwork=='eth'">1000 Ether</strong> <strong *ngIf="setnetwork=='bnb'"> 7000 BNB</strong> </span></p>
-                <p>Soft Cap: <span class="clr"><strong *ngIf="setnetwork=='eth'">200 Ether</strong> <strong *ngIf="setnetwork=='bnb'"> 1500 BNB</strong> </span></p>                <img src="../../assets/fp3d-assets/token-pie-chart.png" alt="" class="img-fluid" style="width: 270px;">
-                <img src="../../assets/token-distribution.png" alt="" class="img-fluid" style="width: 400px; margin-top: 30px;">
+
             </div>
-       </div>
-       </div>
-   </div>
+            <div class="col-sm-6">
+                <div class="">
+                    <h2>Presale<span class="clr"> Distribution</span></h2>
+                    <!-- <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> -->
+                    <p>Name: <span class="clr"><strong>FP3D</strong> </span></p>
+                    <p>Starts: <span class="clr"><strong>31st May 2021</strong> </span></p>
+                    <p>Ends: <span class="clr"><strong></strong>4th June 2021</span></p>
+                    <p>Currencies Accepted: <span class="clr"><strong *ngIf="setnetwork=='eth'">ETH </strong> <strong
+                                *ngIf="setnetwork=='bnb'">BNB</strong> </span></p>
+                    <p>Exchange Rate: <span class="clr"><strong *ngIf="setnetwork=='eth'">1 ETH = 40,000 (40K) FP3D
+                            </strong> <strong *ngIf="setnetwork=='bnb'"> 1 BNB = 5500 (5.5K) FP3D </strong> </span></p>
+                    <p>Hard Cap: <span class="clr"><strong *ngIf="setnetwork=='eth'">1000 Ether</strong> <strong
+                                *ngIf="setnetwork=='bnb'"> 7000 BNB</strong> </span></p>
+                    <p>Soft Cap: <span class="clr"><strong *ngIf="setnetwork=='eth'">200 Ether</strong> <strong
+                                *ngIf="setnetwork=='bnb'"> 1500 BNB</strong> </span></p> <img
+                        src="../../assets/fp3d-assets/token-pie-chart.png" alt="" class="img-fluid"
+                        style="width: 270px;">
+                    <img src="../../assets/token-distribution.png" alt="" class="img-fluid"
+                        style="width: 400px; margin-top: 30px;">
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- 
 <section class="round ptb">
@@ -528,191 +588,67 @@
 
 
 <section class="steps ">
-   <div class="container">
-       <div class="inner-box">
-           <div class="row ptb">
-               <div class="col-sm-6">
-                   <div class="inner-p">
+    <div class="container">
+        <div class="inner-box">
+            <div class="row ptb">
+                <div class="col-sm-6">
+                    <div class="inner-p">
                         <img src="../../assets/fp3d-assets/how-to-buy-image.png" alt="" class="img-fluid">
                     </div>
-               </div>
-               <div class="col-sm-6">
-                   <div class="inner-img">
-                       <h2>How to Buy<span class="common-g"> FP3D Token</span> </h2>
-                       <span class="border1"></span>
+                </div>
+                <div class="col-sm-6">
+                    <div class="inner-img">
+                        <h2>How to Buy<span class="common-g"> FP3D Token</span> </h2>
+                        <span class="border1"></span>
                         <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
                         <h3><span class="clr">01.</span></h3>
-                        <p>Create an account at binance.com, kraken.com, bitpanda.com, kukoin.com or an exchanger of your choice. Exchange FIAT (Dollar, Euro, GBP) for Ethereum ($ETH) or the Binance Coin ($BNB).</p>
+                        <p>Create an account at binance.com, kraken.com, bitpanda.com, kukoin.com or an exchanger of
+                            your choice. Exchange FIAT (Dollar, Euro, GBP) for Ethereum ($ETH) or the Binance Coin
+                            ($BNB).</p>
                         <h3><span class="clr">02.</span> </h3>
-                        <p>Open your browser and go to metamask.io. Download the MetaMask extension and set up a wallet. For mobile. get MetaMask’s iOS or Android app.</p>
+                        <p>Open your browser and go to metamask.io. Download the MetaMask extension and set up a wallet.
+                            For mobile. get MetaMask’s iOS or Android app.</p>
                         <h3><span class="clr">03.</span></h3>
-                        <p>Transfer $ETH or $BNB to your new MetaMask wallet from your existing wallet (e.g. Trust Wallet, Coinbase, or Binance), or buy directly within MetaMask.</p>
+                        <p>Transfer $ETH or $BNB to your new MetaMask wallet from your existing wallet (e.g. Trust
+                            Wallet, Coinbase, or Binance), or buy directly within MetaMask.</p>
                     </div>
-               </div>
+                </div>
 
-           </div>
-       </div>
-   </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="roadmap ptb" #roadmap>
     <div class="container">
-               <div class="row">
- 
-                   <div class="col-sm-12">
-                       <div class="inner-text text-center">
-                           <h2 class="common-g">Roadmap</h2>
- 
-                       </div>
-                   </div>
-               </div>
+        <div class="row">
+
+            <div class="col-sm-12">
+                <div class="inner-text text-center">
+                    <!-- <h2 class="common-g">Roadmap</h2> -->
+
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-sm-12 text-center">
                 <!-- <img src="../../assets/zoome-presale-assest/roadmap.png" alt="" class="img-fluid"> -->
-                <div class="timeline">
-                 <ul>
-                   <li>
-                     <div class="right_content">
-                       <p>Concept Creation
-                       </p>
-                       <p>Start of Development for a 3d NFT Marketplace
-                    </p>
-                       <p>White Paper Creation
-                    <p>
-                        <p>Creation of Contracts for FP3D NFT token on Ethereum and the Binance Smart Chain
-                            <p>
-                        <p>Concept Validation with 90% approval
-                                </p>
-                            </div>
-                     <div class="left_content">
-                       <h3>Q1 - 2021 </h3>
-                     </div>
-                   </li>
-                   <li>
-                     <div class="right_content">
-                         <p>Completion of Development of NFT Marketplace
-
-                         </p>
-                         <p>Deployment on both Ethereum and the Binance Smart Chain
-                        </p>
-                         <p>Development of Presale (ICO)
-
-                       </p>
-                       <p>Launch of presale and official launch of marketplace
-                       </p>
-                     </div>
-                     <div class="left_content">
-                       <h3>Q2 - 2021 </h3>
-                     </div>
-                   </li>
-                   <li>
-                     <div class="right_content">
-                         <p>Listing on Exchanges
-
-                         </p>
-                         <p>CoinMarketCap & CoinGecko Listing
-
-                         </p>
-                         <p>Audit of Tokens
-                       </p>
-                       <p>Scaling our Team of Blockchain & NFT Professionals</p>
-                     </div>
-                     <div class="left_content">
-                       <h3>Q3 - 2021</h3>
-                     </div>
-                   </li>
-                   <li>
-                     <div class="right_content">
-                         <p>Launch of Our Official App V1.0
-                         </p>
-                         <p>Shifting to a more diverse business model
-                         </p>
-                         <p>Partner with Video Streaming Platforms 
-                       </p>
-                     </div>
-                     <div class="left_content">
-                       <h3>Q4 - 2021</h3>
-                     </div>
-                   </li>
-                   <li>
-                     <div class="right_content">
-                         <p>Expansion of Decentralized Warehousing for NFTs
-
- 
-                         </p>
-                         <p>Conceptualization of NFT launchpad
-
- 
-                         </p>
-                         <p>Major Exchange Listings
-
-                         </p>
-                         <p>R & D on expanding to more Blockchains
-                        </p>
-                     </div>
-                     <div class="left_content">
-                       <h3>Q1 - 2022</h3>
-                     </div>
-                   </li>
-                   <li>
-                     <div class="right_content">
-                         <h2></h2>
-                         <p>Launch of NFT and Utility Token on Matic (Polygon)
-
-                         </p>
-                         <p>Deployment of NFT Marketplace on Matic (Polygon
-
-                         </p>
-                         <p>Testing NFT Marketplace deployment on Flow & Tezos
-
-                         </p>
-                         <p>Public Beta testing
-                        </p>
-                     </div>
-                     <div class="left_content">
-                       <h3>Q2 - 2022</h3>
-                     </div>
-                   </li>
-                   <li>
-                     <div class="right_content">
-                         <p>Reward Program for early users
-
-                         </p>
-                         <p>FP3D Mobile and Web Wallet
-
-                         </p>
-                         <p>Integration of Crypto payment providers e.g. CoinPayments
-                        </p>
-                        <p>Huge Marketing Push</p>
-                     </div>
-                     <div class="left_content">
-                       <h3>Q3 - 2022</h3>
-                     </div>
-                   </li>
-                   <!-- <li>
-                     <div class="right_content">
-                         <p>Reward Program for early users
-                         </p>
-                         <p>Zoome mobile and web wallet                        </p>
-                     </div>
-                     <div class="left_content">
-                       <h3>Q4 - 2022</h3>
-                     </div>
-                   </li> -->
-                   <div style="clear:both;"></div>
-                 </ul>
-               </div>
+                <!-- Timeline in here-->
             </div>
         </div>
-     </div>
- </section>
- <section class="footer">
+    </div>
+</section>
+
+
+<section class="footer">
     <div class="container">
         <div class="row">
             <div class="col-sm-5">
                 <div class="inner-logo">
                     <img src="../../../../assets/fp3d-landing-page/logo.png" alt="" class="img-fluid">
-                    <p>FlatPyramid is an NFT marketplace for a huge database of 3d models. FlatPyramid platform allows: users to download 3d models as NFTs, 3d modelers to sell their 3d model(s) as NFTs, and consumers to apply for a specific 3d model they want. </p>
+                    <p>FlatPyramid is an NFT marketplace with ten of thousands of 3d models (NFT digital assets) created
+                        and used by 3d artists and designers for Gaming, the Metaverse, Augmented Reality, Virtual
+                        Reality, Film and Special Effects, and other Interactive Media.</p>
                 </div>
             </div>
             <div class="col-sm-3">
@@ -722,6 +658,9 @@
                         <li class="">
                             <a (click)="scroll(target)">Welcome</a>
                         </li>
+                        <!-- <li class="">
+                            <a>Why Us</a>
+                        </li> -->
                         <li class="">
                             <a href="../../assets/FlatPyramidWhitePaper.pdf" target="_blank">White Paper</a>
                         </li>
@@ -732,13 +671,16 @@
                             <a (click)="scroll(roadmap)">Roadmap</a>
                         </li>
                         <li class="">
-                            <a  href="https://medium.com/@flatpyramid101" target="_blank">Blog</a>
+                            <a href="/#faq">FAQ</a>
+                        </li>
+                        <li class="">
+                            <a href="https://medium.com/@flatpyramid101" target="_blank">Blog</a>
                         </li>
                     </ul>
                 </div>
             </div>
-
-            <!-- <div class="col-sm-4">
+            <!-- 
+            <div class="col-sm-4">
                 <div class="inner-form">
                     <h6>Be The First Know <br> About FP3D News Everyday.</h6>
                     <div class="input-group mb-3">
@@ -752,10 +694,12 @@
         <div class="row">
             <div class="col-sm-8">
                 <div class="inner-copy">
-                    <p>&copy; FP3D 2021.All Right Reserved.</p>
+                    <p>&copy; FP3D
+                        {{currentYear}}
+                        All Rights Reserved.</p>
                 </div>
             </div>
-            
+
             <div class="col-sm-4">
                 <div class="inner-copy">
                     <ul class="list-inline">

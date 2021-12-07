@@ -17,6 +17,8 @@ export class PresaleComponent implements OnInit {
 	showcopy1: boolean;
   constructor(private zone: NgZone, @Inject(WEB3) private web3: any, private Web3: Web3) { }
 
+  currentYear = new Date().getFullYear();
+
   ngOnInit(): void {
     this.model.address = '0x61Ab76EDF48F7e7dB6C3FE0a1F0A779De232236B';
 		this.model.addressContract = '0x3DAeCAE376Ad4FB15eAd85Fb69827C26EA01Bd0B';

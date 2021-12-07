@@ -14,6 +14,8 @@
             }
         }
     }
+
+ 
     .navbar {
         // .navbar-brand {
         //     width: 150px;
@@ -45,6 +47,7 @@
   }
 
 
+
   .common-g {
     // text-transform: lowercase;
     background: linear-gradient(to right, #F2C5BD 0%, #72e6ff 100%);
@@ -54,7 +57,6 @@
 p {
     color: #6c737d;
 }
-
   .features {
       
     //  background-image: url(../../assets/sweetswap-presale-assets/features-background.png);
@@ -127,13 +129,14 @@ p {
     }
 
     .navbar-nav {
-        margin-left: 350px;
+        margin-left: 50px;
         li {
             padding: 0 15px;
             a {
-                color: #2e3746;
+                color: #6b6b72;
                 &:hover {
                     border-bottom: 1px solid #1abc9c;
+                    color: #fff;
                 }
             }
         }
@@ -797,17 +800,96 @@ background-color: #0b0b16;
 
 }
 
+#carouselDemoCaptions {
+    max-width: 680px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#carouselDemoCaptions p {
+    margin-bottom: 3px;
+}
+// carousel
+.carousel .carousel-item {
+    //  height: 740px;
+    min-height: 640px;
+   }
+
+   .carousel .carousel-item .mh-520 { 
+       max-height: 520px !important;
+   }
+  
+//   .carousel-item img {
+//       position: absolute;
+//       object-fit:cover;
+//       top: 0;
+//       left: 0;
+//       min-height: 400px;
+//       max-height: 640px;
+//   }
+
+  .carousel-control-next, .carousel-control-prev {
+      width: 5%;
+      background:none;
+      border:none;
+  }
+
+  .carousel-control-next span, .carousel-control-prev span {
+    color: #19bc9c;
+}
+
+  ol.carousel-indicators li:before {
+    display:none;
+  }
+
+// utility
+.font-0_75 {
+    font-size:0.75em;
+}
+
+.font-0_8 {
+    font-size:0.8em;
+}
 
 // for ipad 
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  { 
-
+    .carousel .carousel-item {
+        //  height: 740px;
+        min-height: 540px;
+       }
+    
+       .carousel .carousel-item .mh-520 { 
+           max-height: 420px !important;
+       }
+      
 }
 
+// rotated
+@media only screen 
+and (min-device-height : 280px) 
+and (max-device-width : 414px)  { 
+    .carousel .carousel-item {
+        min-height: 340px;
+       }
+    
+       .carousel .carousel-item .mh-520 { 
+           max-height: 300px !important;
+       }
+      
+}
 
 // for phones {
     @media (min-device-width:320px) and (max-device-width:768px) {
+        .carousel .carousel-item {
+            //  height: 740px;
+            min-height: 340px;
+           }
+        
+           .carousel .carousel-item .mh-520 { 
+               max-height: 300px !important;
+           }
     
     }
 
