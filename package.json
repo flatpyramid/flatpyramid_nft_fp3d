@@ -9,8 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "deploy-aws-s3-cloudfront --bucket fp-nft-landing-pages-dev --profile flatpyramid-dev --source ./deployment/dist/ --cache-control index.html:no-cache",
-    "deploy:prod": "deploy-aws-s3-cloudfront --bucket fp-nft-landing-pages --profile flatpyramid --source ./deployment/dist/ --cache-control index.html:no-cache --distribution E26S91OHS0XA5B"
+    "deploy": "deploy-aws-s3-cloudfront --bucket fp-nft-landing-pages-dev --acl public --profile flatpyramid-dev --source ./deployment/dist/ --cache-control index.html:no-cache",
+    "deploy:prod": "deploy-aws-s3-cloudfront --bucket fp-nft-landing-pages --acl public --profile flatpyramid --source ./deployment/dist/ --cache-control index.html:no-cache --distribution E26S91OHS0XA5B"
   },
   "private": true,
   "dependencies": {

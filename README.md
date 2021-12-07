@@ -24,5 +24,9 @@ export AWS_PROFILE=<flatpyramid|flatpyramiddev>
 npm run build:prod
 
 npm run deploy:prod
+
+
+# Note: after deploy, if you get a cloudfront access error, then go to S3 and make all objects in the bucket public
+
 ```
 
