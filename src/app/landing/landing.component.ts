@@ -16,4 +16,6 @@ export class LandingComponent implements OnInit {
     el.scrollIntoView({ behavior: "smooth" });
   }
 
+  currentYear = new Date().getFullYear();
+
 }
