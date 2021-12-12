@@ -314,7 +314,7 @@
 
 <section class="round">
     <div class="container">
-        <div class="row">
+        <div class="row" #tokenomics>
             <div class="col-sm-12">
                 <div class="inner-11 text-center">
                     <h2>Tokenomics</h2>
@@ -322,43 +322,49 @@
                 </div>
             </div>
         </div>
-        <div class="row ptb" #tokenomics>
-            <div class="col-sm-6">
-                <div class="">
-                    <h2>Token Metrics</h2>
-                    <!-- <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> -->
-                    <p>Name: <span class="clr"><strong>FP3D</strong> </span></p>
-                    <p>Starts: <span class="clr"><strong>Dec 14th, 2021</strong> </span></p>
-                    <p>Ends: <span class="clr"><strong></strong>Dec 16th, 2021</span></p>
-                    <p>Currencies Accepted:
-                        <span class="clr">
-                            <strong>ETH </strong> and <strong>BNB</strong>
-                        </span>
-                    </p>
-                    <p>Exchange Rate:<br>
-                        <span class="clr">
-                            <strong>1 ETH = 40,000 (40K) FP3D</strong><br>
-                            <strong>1 BNB = 5500 (5.5K) FP3D </strong>
-                        </span>
-                    </p>
-                    <p>Hard Cap:<br>
-                        <span class="clr"><strong>1000 Ether</strong> / <strong> 7000 BNB</strong>
-                        </span>
-                    </p>
-                    <p>Soft Cap:<br>
-                        <span class="clr">
-                            <strong>200 Ether</strong> / <strong> 1500 BNB</strong>
-                        </span>
-                    </p>
+        <div class="row ptb">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- <h2>Token Metrics</h2> -->
+                        <!-- <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> -->
+                        <p>Name: <span class="clr"><strong>FP3D</strong> </span></p>
+                        <p>Starts: <span class="clr"><strong>mid Jan, 2021</strong> </span></p>
+                        <p>Ends: <span class="clr"><strong>end of Jan, 2021</strong> </span></p>
+                        <p>Currencies Accepted:
+                            <span class="clr">
+                                <strong>ETH </strong> and <strong>BNB</strong>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Exchange Rate:<br>
+                            <span class="clr">
+                                <strong>1 ETH = 40,000 (40K) FP3D</strong><br>
+                                <strong>1 BNB = 5500 (5.5K) FP3D </strong>
+                            </span>
+                        </p>
+                        <p>Hard Cap: 
+                            <span class="clr"><strong>1000 Ether</strong> / <strong> 7000 BNB</strong>
+                            </span>
+                        </p>
+                        <p>Soft Cap: 
+                            <span class="clr">
+                                <strong>200 Ether</strong> / <strong> 1500 BNB</strong>
+                            </span>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div>
-                    <h2><span class="clr">Token Distribution</span></h2>
-                    <img src="../../assets/fp3d-assets/token-pie-chart.png" alt="" class="img-fluid"
-                        style="width: 270px;">
-                    <img src="../../assets/token-distribution.png" alt="" class="img-fluid"
-                        style="width: 400px; margin-top: 30px;">
+            <div class="col-md-12">
+                <div style="max-width:1200px !important;">
+                   <google-chart
+                    [title]="chartTitle"
+                    [type]="chartType"
+                    [data]="chartData"
+                    [columns]="chartColumNames"
+                    [options]="chartOptions">
+                    </google-chart>
                 </div>
             </div>
         </div>
@@ -391,8 +397,8 @@
         </div>
         <div class="row">
             <div class="col-sm-6" style="background-color:#191819" class="px-2">
-                <h3 class="clr">
-                    <span class="logo"><img src="../../assets/fp3d-assets/ethereum-eth-logo.png" alt="ethereum" width="100" class="img-fluid opacity-0_7"></span> ETHEREUM (ETH)
+                <h3>
+                    <span class="logo"><img src="../../assets/fp3d-assets/ethereum-eth-logo.png" alt="ethereum" width="100" class="img-fluid opacity-0_7"></span> Ethereum (ETH)
                 </h3>
                 <div class="inner-box">
                     <h5 class="text-muted">ETH Presale Address :</h5>
@@ -441,8 +447,8 @@
             </div>
 
             <div class="col-sm-6" style="background-color:#151515" class="px-2">
-                <h3 class="clr">
-                    <span class="logo"><img src="../../assets/fp3d-assets/binance-smart-chain-logo.png" alt="binance smart chain" width="100" class="img-fluid opacity-0_7"></span> BINANCE SMART CHAIN (BSC)</h3>
+                <h3>
+                    <span class="logo"><img src="../../assets/fp3d-assets/binance-smart-chain-logo.png" alt="binance smart chain" width="100" class="img-fluid opacity-0_7"></span> Binance Smart Chain (BSC)</h3>
                 <div class="inner-box">
                     <h5 class="text-muted">BSC Presale Address :</h5>
                     <ul class="list-inline">

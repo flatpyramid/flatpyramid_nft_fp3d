@@ -1,10 +1,10 @@
 export class AppSettings {
 
-    public static ethtoken='0x3DAeCAE376Ad4FB15eAd85Fb69827C26EA01Bd0B';
+  public static ethtoken='0x3DAeCAE376Ad4FB15eAd85Fb69827C26EA01Bd0B';
 	public static ethpresale='0x61Ab76EDF48F7e7dB6C3FE0a1F0A779De232236B';
 	public static bnbtoken='0xd1a9b078D80dd215Da4E780cAB0fb2F29667B06d';
 	public static bnbpresale='0x6B337A97ad102Cf79F24A5419ac8B2117270E9d5';
-    public static presale_Abi=[
+  public static presale_Abi=[
 		{
 			"constant": true,
 			"inputs": [],
@@ -314,8 +314,4 @@ export class AppSettings {
 			"type": "event"
 		}
 	];
-
-
-	
-
  }

@@ -26,6 +26,7 @@
     "@truffle/hdwallet-provider": "^1.2.6",
     "@types/npm": "^2.0.31",
     "@types/web3": "^1.2.2",
+    "angular-google-charts": "^2.2.2",
     "bootstrap": "^4.6.0",
     "deploy-aws-s3-cloudfront": "^3.4.0",
     "events": "^3.0.0",
