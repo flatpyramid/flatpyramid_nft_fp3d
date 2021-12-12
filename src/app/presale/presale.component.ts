@@ -47,7 +47,7 @@ export class PresaleComponent implements OnInit {
       left: 10, 
       top: 80, 
       width: '80%',
-      height: '50%', 
+      height: '60%', 
       backgroundColor: '#0b0b15' },
     colors: ['#31C3A6', '#FFD500', '#00E9FA', '#FF00DD', '#FF9511', '#1700FF', '#BF2BBF'],
     slices: {
@@ -72,7 +72,7 @@ export class PresaleComponent implements OnInit {
     },
 
     width: window.innerWidth*0.75,
-    height: window.innerWidth*0.6,
+    height: window.innerWidth*0.3,
  };
 
 ngOnInit(): void {
