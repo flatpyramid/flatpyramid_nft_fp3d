@@ -83,7 +83,7 @@ ngOnInit(): void {
 }
 
 ngAfterViewInit() {
-  this.openModal.nativeElement.click();
+  // this.openModal.nativeElement.click();
 }
 scroll(el: HTMLElement) {
   el.scrollIntoView({ behavior: "smooth" });
