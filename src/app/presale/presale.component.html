@@ -149,51 +149,6 @@
                                 <span class="sr-only">Next</span>
                             </button>
                         </div>
-                        <!--- <div class="row">
-                            <div class="col-sm-12">
-                                <ul id="timer" class="list-inline text-center">
-                                    <li class="list-inline-item">
-                                        <h2 id="days" class="clr">03</h2>
-                                        <h6><strong>DAYS</strong></h6>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <h2 id="hours" class="clr">05</h2>
-                                        <h6><strong>HRS</strong></h6>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <h2 id="minutes" class="clr">15</h2>
-                                        <h6><strong>MIN</strong></h6>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <h2 id="seconds" class="clr">30</h2>
-                                        <h6><strong>SEC</strong></h6>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> -->
-                        <!-- <div class="row">
-                                    <div class="col-sm-12">
-                                        <div class="for-inner">
-                                            <p>Token Name: <span class="common-g">FP3D</span></p>
-                                            <p>Presale Supply: <span class="common-g">100,000,000</span></p>
-                                            <p>Presale Price: <span class="common-g">1 BNB = 5,000</span></p>
-                                        </div>
-                                    </div>
-                                </div> -->
-                        <!-- <div class="row">
-                            <div class="col-sm-12">
-
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control for-input"
-                                        placeholder="Enter Amount Of Token" name="getval" [(ngModel)]="model.getval"
-                                        #getval="ngModel" aria-label="Recipient's username"
-                                        aria-describedby="basic-addon2">
-
-                                    <button class="btn-common" (click)="launchPresale()">Confirm</button>
-                                </div>
-                            </div>
-                        </div> 
-                    </div> -->
                     </div>
                 </div>
             </div>
@@ -362,124 +317,15 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="inner-11 text-center">
-                    <h2>FP3D Presale</h2>
+                    <h2>Tokenomics</h2>
                     <span class="border1"></span>
                 </div>
             </div>
         </div>
-        <div class="row ptb">
-            <div class="col-sm-6">
-                <div class="inner-box">
-                    <h3 class="text-center">Public Presale</h3>
-                    <p class="text-center">A limited-time sale of FP3D at a discount for early investors</p>
-
-                    <h3 class="clr text-center">1 BNB = 5500 (5.5K) FP3D</h3>
-
-                    <h3 class="clr text-center">1 ETH = 40,000 (40K) FP3D</h3>
-
-                    <!-- <button class="btn-common" style="margin: 20px 0;">Buy Now</button> -->
-                </div>
-
-                <div>
-                    <h3 class="clr">ETHEREUM</h3>
-                    <div class="inner-box">
-                        <h4>ETH Presale Address :</h4>
-                        <ul class="list-inline" style="margin: 20px 0 0px;">
-                            <li class="list-inline-item">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" [(ngModel)]="model.address"
-                                        #address="ngModel" value="" readonly>
-                                </div>
-                            </li>
-                            <li class="list-inline-item">
-                                <div class="inner-btn">
-                                    <ul class="list-inline">
-                                        <li><button class="btn-common" *ngIf="!showcopy"
-                                                (click)="copyMessageEth()">Copy</button></li>
-                                        <li class="pt-3"><button *ngIf="showcopy" class="btn-common">Copied</button>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="inner-box">
-                        <h4>ETH Contract Address:</h4>
-                        <ul class="list-inline" style="margin: 20px 0 0px;">
-                            <li class="list-inline-item">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" [(ngModel)]="model.addressContract"
-                                        value="" readonly>
-                                </div>
-                            </li>
-                            <li class="list-inline-item">
-                                <div class="inner-btn">
-                                    <ul class="list-inline">
-                                        <li><button class="btn-common" *ngIf="!showcopy1"
-                                                (click)="copyMessageContractAddressEth()">Copy</button></li>
-                                        <li class="pt-3"><button *ngIf="showcopy1" class="btn-common">Copied</button>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="clr">BINANCE SMART CHAIN (BSC)</h3>
-                    <div class="inner-box">
-                        <h4>BSC Presale Address :</h4>
-                        <ul class="list-inline" style="margin: 20px 0 0px;">
-                            <li class="list-inline-item">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" [(ngModel)]="model.addressBNB"
-                                        #address="ngModel" value="" readonly>
-                                </div>
-                            </li>
-                            <li class="list-inline-item">
-                                <div class="inner-btn">
-                                    <ul class="list-inline">
-                                        <li><button class="btn-common" *ngIf="!showcopy"
-                                                (click)=" copyMessageBnb()">Copy</button></li>
-                                        <li class="pt-3"><button *ngIf="showcopy" class="btn-common">Copied</button>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="inner-box">
-                        <h4>BSC Contract Address:</h4>
-                        <ul class="list-inline" style="margin: 20px 0 0px;">
-                            <li class="list-inline-item">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" [(ngModel)]="model.addressContractBNB"
-                                        value="" readonly>
-                                </div>
-                            </li>
-                            <li class="list-inline-item">
-                                <div class="inner-btn">
-                                    <ul class="list-inline">
-                                        <li><button class="btn-common" *ngIf="!showcopy1"
-                                                (click)="copyMessageContractAddressBnb()">Copy</button></li>
-                                        <li class="pt-3"><button *ngIf="showcopy1" class="btn-common">Copied</button>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
+        <div class="row ptb" #tokenomics>
             <div class="col-sm-6">
                 <div class="">
-                    <h2>Token Metrics <span class="clr"> & Distribution</span></h2>
+                    <h2>Token Metrics</h2>
                     <!-- <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> -->
                     <p>Name: <span class="clr"><strong>FP3D</strong> </span></p>
                     <p>Starts: <span class="clr"><strong>Dec 14th, 2021</strong> </span></p>
@@ -488,7 +334,7 @@
                         <span class="clr">
                             <strong>ETH </strong> and <strong>BNB</strong>
                         </span>
-                      </p>
+                    </p>
                     <p>Exchange Rate:<br>
                         <span class="clr">
                             <strong>1 ETH = 40,000 (40K) FP3D</strong><br>
@@ -504,6 +350,11 @@
                             <strong>200 Ether</strong> / <strong> 1500 BNB</strong>
                         </span>
                     </p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <h2><span class="clr">Token Distribution</span></h2>
                     <img src="../../assets/fp3d-assets/token-pie-chart.png" alt="" class="img-fluid"
                         style="width: 270px;">
                     <img src="../../assets/token-distribution.png" alt="" class="img-fluid"
@@ -513,106 +364,134 @@
         </div>
     </div>
 </section>
-<!-- 
-<section class="round ptb">
+
+<section class="round">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                <div class="inner-text">
-                    <h2>Utility <br> <span class="common-g">Zero-Knowledge <br> -Proofs</span></h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <div class="col-sm-12">
+                <div class="inner-11 text-center">
+                    <h2>Presale</h2>
+                    <span class="border1"></span>
                 </div>
             </div>
-            <div class="col-sm-6">
-                 <div class="inner-img">
-                     <img src="../../../../assets/fp3d-landing-page/utility-illustration.png" alt="" class="img-fluid">
-                 </div>
+        </div>
+        <div class="row ptb" #presale>
+            <div class="col-sm-12">
+                <div class="inner-box">
+                    <h3 class="text-center">Public Presale</h3>
+                    <p class="text-center">A limited-time sale of FP3D at a discount for early investors</p>
+
+                    <h3 class="clr text-center">1 BNB = 5500 (5.5K) FP3D</h3>
+
+                    <h3 class="clr text-center">1 ETH = 40,000 (40K) FP3D</h3>
+
+                    <!-- <button class="btn-common" style="margin: 20px 0;">Buy Now</button> -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6" style="background-color:#191819" class="px-2">
+                <h3 class="clr">
+                    <span class="logo"><img src="../../assets/fp3d-assets/ethereum-eth-logo.png" alt="ethereum" width="100" class="img-fluid opacity-0_7"></span> ETHEREUM (ETH)
+                </h3>
+                <div class="inner-box">
+                    <h5 class="text-muted">ETH Presale Address :</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <div class="form-group">
+                                <input type="email" class="form-control font-hash clr" [(ngModel)]="model.address"
+                                    #address="ngModel" value="" readonly>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="inner-btn">
+                                <ul class="list-inline">
+                                    <li><button class="btn-common" *ngIf="!showcopy"
+                                            (click)="copyMessageEth()">Copy</button></li>
+                                    <li class="pt-3"><button *ngIf="showcopy" class="btn-common">Copied</button>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inner-box">
+                    <h5 class="text-muted">ETH Contract Address:</h5>
+                    <ul class="list-inline" style="margin: 20px 0 0px;">
+                        <li class="list-inline-item">
+                            <div class="form-group">
+                                <input type="email" class="form-control font-hash" [(ngModel)]="model.addressContract"
+                                    value="" readonly>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="inner-btn">
+                                <ul class="list-inline">
+                                    <li><button class="btn-common" *ngIf="!showcopy1"
+                                            (click)="copyMessageContractAddressEth()">Copy</button></li>
+                                    <li class="pt-3"><button *ngIf="showcopy1"
+                                            class="btn-common">Copied</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-sm-6" style="background-color:#151515" class="px-2">
+                <h3 class="clr">
+                    <span class="logo"><img src="../../assets/fp3d-assets/binance-smart-chain-logo.png" alt="binance smart chain" width="100" class="img-fluid opacity-0_7"></span> BINANCE SMART CHAIN (BSC)</h3>
+                <div class="inner-box">
+                    <h5 class="text-muted">BSC Presale Address :</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <div class="form-group">
+                                <input type="email" class="form-control font-hash clr" [(ngModel)]="model.addressBNB"
+                                    #address="ngModel" value="" readonly>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="inner-btn">
+                                <ul class="list-inline">
+                                    <li><button class="btn-common" *ngIf="!showcopy"
+                                            (click)=" copyMessageBnb()">Copy</button></li>
+                                    <li class="pt-3"><button *ngIf="showcopy" class="btn-common">Copied</button>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inner-box">
+                    <h5 class="text-muted">BSC Contract Address:</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <div class="form-group">
+                                <input type="email" class="form-control font-hash" [(ngModel)]="model.addressContractBNB"
+                                    value="" readonly>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="inner-btn">
+                                <ul class="list-inline">
+                                    <li><button class="btn-common" *ngIf="!showcopy1"
+                                            (click)="copyMessageContractAddressBnb()">Copy</button></li>
+                                    <li class="pt-3"><button *ngIf="showcopy1"
+                                            class="btn-common">Copied</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
- </section> -->
-
-<!-- <section class="token">
-   <div class="container">
-       <div class="row ptb">
-           <div class="col-sm-12 text-center">
-               <h2 class="main-color"><strong>Token Distribution</strong></h2>
-           </div>
-       </div>
-       <div class="row ptb">
-           <div class="col-sm-6">
-               <div class="inner-tile">
-                   <div class="row">
-                       <div class="col-sm-6">
-                           <div class="inner-style">
-                               <span class="main-color">.</span>
-                               Name:
-                               <h6 class="main-color">Candy Token</h6>
-                           </div>
-                       </div>
-                       <div class="col-sm-6">
-                           <div class="inner-style">
-                               <span class="main-color">.</span>
-                               Starts:
-                               <h6 class="main-color">April 8</h6>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="row">
-                       <div class="col-sm-6">
-                           <div class="inner-style">
-                               <span class="main-color">.</span>
-                               Exchange Rate:
-                               <h6 class="main-color">1ETH = 100,000 CANDY</h6>
-                           </div>
-                       </div>
-                       <div class="col-sm-6">
-                           <div class="inner-style">
-                               <span class="main-color">.</span>
-                               Ends:
-                               <h6 class="main-color">April 10</h6>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="row">
-                       <div class="col-sm-6">
-                           <div class="inner-style">
-                               <span class="main-color">.</span>
-                               Currencies Accepted:
-                               <h6 class="main-color">ETH</h6>
-                           </div>
-                       </div>
-                       <div class="col-sm-6">
-                           <div class="inner-style">
-                               <span class="main-color">.</span>
-                               Hard Cap:
-                               <h6 class="main-color">125,000,000 CANDY</h6>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="row">
-                       <div class="col-sm-6">
-                           <div class="inner-style">
-                               <span class="main-color">.</span>
-                               Minimum Purchase:
-                               <h6 class="main-color">0.1 ETH/10,000 CANDY</h6>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-
-           <div class="col-sm-6">
-               <div class="inner-disc text-center">
-                   <img src="../../assets/sweetswap-presale-assets/token-distribution-pie-chart.png" alt="" class="img-fluid">
-               </div>
-           </div>
-       </div>
-   </div>
-</section> -->
-
-
-<section class="steps ">
+ </section>
+<section class="steps">
     <div class="container">
         <div class="inner-box">
             <div class="row ptb">
@@ -644,27 +523,6 @@
     </div>
 </section>
 
-<section class="roadmap ptb" #roadmap>
-    <div class="container">
-        <div class="row">
-
-            <div class="col-sm-12">
-                <div class="inner-text text-center">
-                    <!-- <h2 class="common-g">Roadmap</h2> -->
-
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <!-- <img src="../../assets/zoome-presale-assest/roadmap.png" alt="" class="img-fluid"> -->
-                <!-- Timeline in here-->
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <section class="footer">
     <div class="container">
         <div class="row">
@@ -693,6 +551,9 @@
                             <a (click)="scroll(features)">Features</a>
                         </li>
                         <li class="">
+                            <a (click)="scroll(tokenomics)">Tokenomics</a>
+                        </li>
+                        <li class="">
                             <a href="/#road_map">Roadmap</a>
                         </li>
                         <li class="">
@@ -704,16 +565,6 @@
                     </ul>
                 </div>
             </div>
-            <!-- 
-            <div class="col-sm-4">
-                <div class="inner-form">
-                    <h6>Be The First Know <br> About FP3D News Everyday.</h6>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Enter Your Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <img src="../../assets/fp3d-assets/send-button.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div> -->
         </div>
         <hr>
         <div class="row">

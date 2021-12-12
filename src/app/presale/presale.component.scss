@@ -422,10 +422,9 @@ background-color: #0b0b16;
 
         .form-control {
             background: #090913;
-    color: #fff;
-    border-radius: 20px;
-    border-color: #090913;
-    width: 410px;
+            color: #fff;
+            border-radius: 20px;
+            border-color: #090913;
         }
     }
     .main-round {
@@ -818,15 +817,6 @@ background-color: #0b0b16;
    .carousel .carousel-item .mh-520 { 
        max-height: 520px !important;
    }
-  
-//   .carousel-item img {
-//       position: absolute;
-//       object-fit:cover;
-//       top: 0;
-//       left: 0;
-//       min-height: 400px;
-//       max-height: 640px;
-//   }
 
   .carousel-control-next, .carousel-control-prev {
       width: 5%;
@@ -849,6 +839,17 @@ background-color: #0b0b16;
 
 .font-0_8 {
     font-size:0.8em;
+}
+
+input.form-control.font-hash {
+    font-size:0.8em;
+    color: gray !important;
+    font-family:'Courier New', Courier, monospace;
+    width: 355px;
+}
+
+input.form-control.font-hash.clr {
+    color:#19bc9c !important;
 }
 
 // for ipad 
