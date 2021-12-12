@@ -18,6 +18,9 @@
                         <a class="nav-link" (click)="scroll(features)">Features</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" (click)="scroll(tokenomics)">Tokenomics</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="../../assets/FlatPyramidWhitePaper.pdf" target="_blank">White
                             Paper</a>
                     </li>
@@ -314,7 +317,7 @@
 
 <section class="round">
     <div class="container">
-        <div class="row" #tokenomics>
+        <div id="tokenomics" class="row" #tokenomics>
             <div class="col-sm-12">
                 <div class="inner-11 text-center">
                     <h2>Tokenomics</h2>
@@ -357,8 +360,8 @@
                 </div>
             </div>
             <div class="col-md-12">
-                <div style="max-width:1200px !important;">
-                   <google-chart
+                <div style="max-width:1200px !important;max-height:1200px !important;">
+                   <google-chart style="max-width:1200px; max-height:1200px"
                     [title]="chartTitle"
                     [type]="chartType"
                     [data]="chartData"
@@ -584,17 +587,17 @@
 
             <div class="col-sm-4">
                 <div class="inner-copy">
-                    <ul class="list-inline">
+                    <!-- <ul class="list-inline">
                         <li class="list-inline-item">
                             <a href="https://t.me/flatpyramid" target="_blank">
                                 <img src="../../assets/fp3d-assets/telegram-icon.png" alt="" class="img-fluid">
                             </a>
                         </li>
-                        <!-- <li class="list-inline-item">
+                        <li class="list-inline-item">
                             <a>
                                 <img src="../../assets/fp3d-assets/instagram-icon.png" alt="" class="img-fluid">
                             </a>
-                        </li> -->
+                        </li>
                         <li class="list-inline-item">
                             <a href="https://www.reddit.com/user/flatpyramid101" target="_blank">
                                 <img src="../../assets/fp3d-assets/reddit-icon.png" alt="" class="img-fluid">
@@ -604,7 +607,7 @@
                             <a>
                                 <img src="../../assets/fp3d-assets/facebook-icon.png" alt="" class="img-fluid">
                             </a>
-                        </li> -->
+                        </li>
                         <li class="list-inline-item">
                             <a href="https://medium.com/@flatpyramid101" target="_blank">
                                 <img src="../../assets/fp3d-assets/medium-icon.png" alt="" class="img-fluid">
@@ -615,7 +618,7 @@
                                 <img src="../../assets/fp3d-assets/twitter-icon.png" alt="" class="img-fluid">
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>
