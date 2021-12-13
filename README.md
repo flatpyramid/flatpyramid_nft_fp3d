@@ -16,6 +16,7 @@ npm i
 npm start
 
 # Deployment
+## AWS Profile
 
 export AWS_PROFILE=<flatpyramid|flatpyramiddev>
 

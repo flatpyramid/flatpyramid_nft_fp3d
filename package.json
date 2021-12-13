@@ -9,8 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "deploy-aws-s3-cloudfront --bucket fp-nft-landing-pages-dev --acl public-read --profile flatpyramid-dev --source ./deployment/dist/ --cache-control index.html:no-cache",
-    "deploy:prod": "deploy-aws-s3-cloudfront --bucket fp-nft-landing-pages --acl public-read --profile flatpyramid --source ./deployment/dist/ --cache-control index.html:no-cache --distribution E26S91OHS0XA5B"
+    "deploy": "AWS_PROFILE=flaypyramiddev deploy-aws-s3-cloudfront --bucket fp-nft-landing-pages-dev --acl public-read --profile flatpyramid-dev --source ./deployment/dist/ --cache-control index.html:no-cache",
+    "deploy:prod": "AWS_PROFILE=flaypyramid deploy-aws-s3-cloudfront --bucket fp-nft-landing-pages --acl public-read --profile flatpyramid --source ./deployment/dist/ --cache-control index.html:no-cache --distribution E26S91OHS0XA5B --debug"
   },
   "private": true,
   "dependencies": {
@@ -28,7 +28,7 @@
     "@types/web3": "^1.2.2",
     "angular-google-charts": "^2.2.2",
     "bootstrap": "^4.6.0",
-    "deploy-aws-s3-cloudfront": "^3.4.0",
+    "deploy-aws-s3-cloudfront": "^3.6.0",
     "events": "^3.0.0",
     "jquery": "^3.6.0",
     "rxjs": "~6.6.0",
