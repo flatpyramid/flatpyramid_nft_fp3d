@@ -16,9 +16,10 @@ npm i
 npm start
 
 # Deployment
+
 ## AWS Profile
 
-export AWS_PROFILE=<flatpyramid|flatpyramiddev>
+export AWS_PROFILE=<profile>
 
 ## For Production
 
@@ -30,5 +31,3 @@ npm run build:prod
 npm run deploy:prod
 
 ```
-
-Then clear the cache on [s3 bucket](https://s3.console.aws.amazon.com/s3/buckets/fp-nft-landing-pages?region=us-east-1&tab=objects)
