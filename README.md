@@ -19,7 +19,7 @@ npm start
 
 ## AWS Profile
 
-export AWS_PROFILE=<profile>
+```export AWS_PROFILE=<profile>```
 
 ## For Production
 
